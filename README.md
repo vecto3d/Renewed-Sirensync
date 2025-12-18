@@ -1,5 +1,7 @@
 # Renewed Sirensync
 
+## Uses danish police sirens
+
 Originally this resource was PMA sirensync but I have made some improvements like, swapping over to lua completely will make it easier to drag and drop, utilizing Ox_Lib to handle a lot of the heavy lifting.
 
 The resource works closer to LVC than Pma Sirensync did, here's a quick rundown of how the keybinds work.
@@ -24,6 +26,7 @@ If you wish to change any keybinds you can do so in the client.lua
 - and enjoy :)
 
 ## Addon Sirens
+
 If you have a server sided siren pack you can replace the sirens used in the `config.lua`. You can create "groups" of models that use the same siren sounds.
 You can refer to the type annotations, but here is an example:
 
@@ -62,5 +65,5 @@ sirens = {
 
 ## Credits
 
-* [AvarianKnight](https://github.com/AvarianKnight) Original creator of PMA Sirensync.
-* [BerkieBb](https://github.com/BerkieBb) Maintained PMA Sirensync.
+- [AvarianKnight](https://github.com/AvarianKnight) Original creator of PMA Sirensync.
+- [BerkieBb](https://github.com/BerkieBb) Maintained PMA Sirensync.
