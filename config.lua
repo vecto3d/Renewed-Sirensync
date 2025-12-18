@@ -27,13 +27,13 @@ return {
         --base
         {
             sirenModes = {
-                { audioName = 'VEHICLES_HORNS_SIREN_1' },
-                { audioName = 'VEHICLES_HORNS_SIREN_2' },
-                { audioName = 'VEHICLES_HORNS_POLICE_WARNING' },
+                { audioName = 'SIREN_2',          audioRef = 'POLICE_SOUNDSET' },
+                { audioName = 'SIREN_PA20A_WAIL', audioRef = 'POLICE_SOUNDSET' },
+                { audioName = 'SIREN_QUICK_01',   audioRef = 'POLICE_SOUNDSET' },
             },
 
             horn = {
-                audioName = 'SIRENS_AIRHORN'
+                audioName = 'AIRHORN_EQD', audioRef = 'POLICE_SOUNDSET'
             }
         },
 
@@ -52,32 +52,6 @@ return {
             models = {
                 [`FIRETRUK`] = true,
                 [`ambulance`] = true,
-            }
-        },
-
-        --unmarked
-        {
-            sirenModes = {
-                { audioName = 'RESIDENT_VEHICLES_SIREN_WAIL_02' },
-                { audioName = 'RESIDENT_VEHICLES_SIREN_QUICK_02' }
-            },
-
-            models = {
-                [`fbi`] = true,
-                [`fbi2`] = true,
-                [`police4`] = true,
-            }
-        },
-
-        --bikes
-        {
-            sirenModes = {
-                { audioName = 'RESIDENT_VEHICLES_SIREN_WAIL_03' },
-                { audioName = 'RESIDENT_VEHICLES_SIREN_QUICK_03' }
-            },
-
-            models = {
-                [`policeb`] = true
             }
         },
     }

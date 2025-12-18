@@ -27,6 +27,8 @@ local GetEntityModel = GetEntityModel
 local GetVehicleEngineHealth = GetVehicleEngineHealth
 local GetVehicleBodyHealth = GetVehicleBodyHealth
 
+RequestScriptAudioBank("DLC_DANISH_SIRENS\\POLICE", false)
+
 -- Localized Functions --
 local function releaseSound(veh, soundId, forced)
     if forced and (DoesEntityExist(veh) and not IsEntityDead(veh)) then return end
@@ -262,7 +264,8 @@ stateBagWrapper('sirenMode', function(veh, soundMode)
     end
 
     if not audioName then
-        return lib.print.error(('No sound found for siren mode %d on vehicle model (hash) %s'):format(soundMode, GetEntityModel(veh)))
+        return lib.print.error(('No sound found for siren mode %d on vehicle model (hash) %s'):format(soundMode,
+            GetEntityModel(veh)))
     end
 
     ---@diagnostic disable-next-line: param-type-mismatch
