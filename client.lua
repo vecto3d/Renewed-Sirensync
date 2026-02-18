@@ -27,8 +27,6 @@ local GetEntityModel = GetEntityModel
 local GetVehicleEngineHealth = GetVehicleEngineHealth
 local GetVehicleBodyHealth = GetVehicleBodyHealth
 
-RequestScriptAudioBank("DLC_DANISH_SIRENS\\POLICE", false)
-
 -- Localized Functions --
 local function releaseSound(veh, soundId, forced)
     if forced and (DoesEntityExist(veh) and not IsEntityDead(veh)) then return end
@@ -45,6 +43,9 @@ local function isVehAllowed()
 
     return true
 end
+
+-- Loads the danish siren files
+RequestScriptAudioBank("DLC_DANISH_SIRENS\\POLICE", false)
 
 -- Cleanup Loop --
 CreateThread(function()
